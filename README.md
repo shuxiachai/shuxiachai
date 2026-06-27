@@ -1,16 +1,39 @@
-## Hi there 👋
+# Hi, I'm Jingbo Chai
 
-<!--
-**shuxiachai/shuxiachai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Master of Computer Science @ The University of Sydney
 
-Here are some ideas to get you started:
+AI Agent Developer | Multi-Agent Systems | LLM Applications
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## Featured Projects
+
+### BushfireReadyGPT
+Multi-agent report generation system for Australian bushfire preparedness.
+
+### Academic Commercialization Agent
+CrewAI-based system for academic research commercialization assessment.
+
+### LeyLineBook
+Desktop management system for Genshin Impact farming and task planning.
+
+---
+
+## Tech Stack
+
+Languages:
+Python · Java · SQL
+
+AI:
+CrewAI · LangChain · Ollama · LLM
+
+Backend:
+Spring Boot · MySQL
+
+---
+
+## Contact
+
+Email: shuxiachai@163.com
+
+GitHub: github.com/shuxiachai.com
