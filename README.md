@@ -11,11 +11,20 @@ AI Agent Developer | Multi-Agent Systems | LLM Applications
 ### BushfireReadyGPT
 Multi-agent report generation system for Australian bushfire preparedness.
 
+Repository →
+https://github.com/shuxiachai/BushfireReadyGPT
+
 ### Academic Commercialization Agent
 CrewAI-based system for academic research commercialization assessment.
 
+Repository →
+https://github.com/shuxiachai/academic-commercialization-agent
+
 ### LeyLineBook
 Desktop management system for Genshin Impact farming and task planning.
+
+Repository →
+https://github.com/shuxiachai/LeyLineBook
 
 ---
 
@@ -36,4 +45,4 @@ Spring Boot · MySQL
 
 Email: shuxiachai@163.com
 
-GitHub: github.com/shuxiachai.com
+GitHub:github.com/shuxiachai
