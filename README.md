@@ -1,48 +1,80 @@
-# Hi, I'm Jingbo Chai
+# Hi, I'm Jingbo Chai 👋
 
-Master of Computer Science @ The University of Sydney
+### AI Agent Engineer | Multi-Agent Systems | LLM Applications
 
-AI Agent Developer | Multi-Agent Systems | LLM Applications
+🎓 Master of Computer Science @ The University of Sydney
+
+Building AI Agents, Multi-Agent Systems and LLM-powered Applications.
 
 ---
 
 ## Featured Projects
 
-### BushfireReadyGPT
-Multi-agent report generation system for Australian bushfire preparedness.
-
-Repository →
-https://github.com/shuxiachai/BushfireReadyGPT
-
 ### Academic Commercialization Agent
-CrewAI-based system for academic research commercialization assessment.
 
-Repository →
+Multi-Agent academic research commercialization platform built with CrewAI, LangChain and LLM workflows.
+
+🔗 Repository:
 https://github.com/shuxiachai/academic-commercialization-agent
 
-### LeyLineBook
-Desktop management system for Genshin Impact farming and task planning.
+---
 
-Repository →
+### BushfireReadyGPT
+
+Multi-Agent emergency decision support system using CrewAI, LLM workflows and automated report generation for Australian bushfire preparedness.
+
+🔗 Repository:
+https://github.com/shuxiachai/BushfireReadyGPT
+
+---
+
+### LeyLineBook
+
+Desktop task management application built with Java Swing for multi-account workflow management.
+
+🔗 Repository:
 https://github.com/shuxiachai/LeyLineBook
+
+---
+
+## Areas of Interest
+
+- AI Agent
+- Multi-Agent Systems
+- LLM Applications
+- AI Coding
+- Agent Workflow
+- Prompt Engineering
+- RAG
 
 ---
 
 ## Tech Stack
 
-Languages:
+### Languages
+
 Python · Java · SQL
 
-AI:
-CrewAI · LangChain · Ollama · LLM
+### LLM & AI
 
-Backend:
-Spring Boot · MySQL
+LangChain · LangGraph · CrewAI · Ollama · OpenAI API
+
+### AI Agent
+
+Multi-Agent · RAG · Prompt Engineering · Tool Calling
+
+### Backend
+
+FastAPI · Spring Boot · MySQL
 
 ---
 
 ## Contact
 
-Email: shuxiachai@163.com
+📧 Email
 
-GitHub:github.com/shuxiachai
+shuxiachai@163.com
+
+🌐 GitHub
+
+https://github.com/shuxiachai
