@@ -1,80 +1,32 @@
 # Hi, I'm Jingbo Chai 👋
 
-### AI Agent Engineer | Multi-Agent Systems | LLM Applications
+### AI Agent & LLM Application Engineer
 
-🎓 Master of Computer Science @ The University of Sydney
+🎓 Master of Computer Science at The University of Sydney · 2027 Graduate
 
-Building AI Agents, Multi-Agent Systems and LLM-powered Applications.
+I build evidence-grounded Agent systems and production-oriented LLM applications, with a focus on workflow orchestration, RAG, evaluation, guardrails, observability, and failure recovery.
 
----
+> Open to 2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform, and AI Backend engineering.
 
 ## Featured Projects
 
-### Academic Commercialization Agent
+| Project | What It Does | Engineering Highlights |
+|---|---|---|
+| [Academic Commercialization Agent](https://github.com/shuxiachai/academic-commercialization-agent) · [Live Demo](https://academic-commercialization-agent.up.railway.app) | A 6-agent, evidence-constrained workflow that turns a research topic or paper into a citation-backed commercialization report and TRL/MRL scorecard. | Deterministic context pipeline · Pydantic guardrails · content-addressed checkpoints · 30/30 fault-recovery audit · 90-unit Agent topology ablation · FastAPI/Railway deployment |
+| [BushfireReadyGPT](https://github.com/shuxiachai/BushfireReadyGPT) | A local-first Australian bushfire preparedness report system combining deterministic analysis, controlled LLM generation, hybrid RAG, and human review. | Qdrant + BM25/RRF · fail-closed retrieval · governed report checks · Top-8 Recall 100%, MRR 92.2%, Top-1 85.3% · 8/8 model regression cases passed |
+| [LeyLineBook](https://github.com/shuxiachai/LeyLineBook) | A local-first task manager for Genshin Impact multi-account players and service studios, delivered as a Windows desktop application and offline PWA. | Python/SQLite + JavaScript/IndexedDB · pywebview/WebView2 · cross-platform backup migration · DPAPI credential protection · 31 releases · used by dozens of users |
 
-Multi-Agent academic research commercialization platform built with CrewAI, LangChain and LLM workflows.
+## Core Stack
 
-🔗 Repository:
-https://github.com/shuxiachai/academic-commercialization-agent
+**Agent & LLM:**  
+LangGraph · CrewAI · LangChain · Multi-Agent Workflows · Tool/Function Calling · Structured Output · Guardrails · Human-in-the-loop
 
----
+**RAG & Evaluation:**  
+Embeddings · Qdrant · BM25/RRF · Hybrid Retrieval · Context Engineering · Agent/RAG Evaluation
 
-### BushfireReadyGPT
-
-Multi-Agent emergency decision support system using CrewAI, LLM workflows and automated report generation for Australian bushfire preparedness.
-
-🔗 Repository:
-https://github.com/shuxiachai/BushfireReadyGPT
-
----
-
-### LeyLineBook
-
-Desktop task management application built with Java Swing for multi-account workflow management.
-
-🔗 Repository:
-https://github.com/shuxiachai/LeyLineBook
-
----
-
-## Areas of Interest
-
-- AI Agent
-- Multi-Agent Systems
-- LLM Applications
-- AI Coding
-- Agent Workflow
-- Prompt Engineering
-- RAG
-
----
-
-## Tech Stack
-
-### Languages
-
-Python · Java · SQL
-
-### LLM & AI
-
-LangChain · LangGraph · CrewAI · Ollama · OpenAI API
-
-### AI Agent
-
-Multi-Agent · RAG · Prompt Engineering · Tool Calling
-
-### Backend
-
-FastAPI · Spring Boot · MySQL
-
----
+**AI Application Engineering:**  
+Python · FastAPI · Pydantic v2 · SQL/SQLite · JavaScript · Docker · GitHub Actions · Linux · OpenTelemetry/OpenInference
 
 ## Contact
 
-📧 Email
-
-shuxiachai@163.com
-
-🌐 GitHub
-
-https://github.com/shuxiachai
+📧 [shuxiachai@163.com](mailto:shuxiachai@163.com)
