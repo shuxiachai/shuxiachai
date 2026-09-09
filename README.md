@@ -1,81 +1,48 @@
-<div align="center">
+# Jingbo Chai · 柴靖博
 
-# Hi, I'm Jingbo Chai 👋
+**AI Agent & LLM Application Engineering**  
+Master of Computer Science @ The University of Sydney · 2027 Graduate  
+**2027 届｜AI Agent、LLM 应用与 Agent 平台工程方向**
 
-### AI Agent & LLM Application Engineer
+I build LLM workflows with traceable evidence, explicit evaluation and recoverable execution.
 
-Master of Computer Science @ The University of Sydney · 2027 Graduate
+[Email](mailto:shuxiachai@163.com) · [Historical sample report](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/examples/car-t-solid-tumors/commercialization_report.md) · [Engineering case study](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/portfolio-case-study.md)
 
-I build evidence-grounded Agent systems and production-oriented LLM applications, focusing on workflow orchestration, RAG, evaluation, guardrails, observability, and failure recovery.
-
-[Email](mailto:shuxiachai@163.com) ·
-[Featured Project](https://github.com/shuxiachai/academic-commercialization-agent) ·
-[Live Demo](https://academic-commercialization-agent.up.railway.app)
-
-</div>
-
----
-
-## Featured Projects
+## Selected projects
 
 ### [Academic Commercialization Agent](https://github.com/shuxiachai/academic-commercialization-agent)
 
-*An evidence-constrained 6-agent workflow for turning research topics or papers into citation-backed commercialization reports and TRL/MRL scorecards.*
+**Agent workflows & runtime reliability** — Turn a research topic or paper into a cited commercialization report and scorecard.
 
-- Three evidence agents analyze academic, patent, and market evidence in parallel, followed by a sequential Writer → Reviewer → Scorer workflow.
-- Pydantic guardrails enforce structured outputs, citation integrity, immutable sources, and deterministic scoring.
-- Content-addressed checkpoints passed **30/30 hard-kill recovery cases**; a **90-unit topology ablation** quantified quality, token, and cost trade-offs.
+- Deterministic retrieval freezes the evidence before a six-stage LLM workflow analyses, writes, reviews and scores it.
+- Structured output contracts, checkpoint recovery and redacted tracing make failures inspectable. Recovery passed **30/30 offline fault-injection cases**; the protocol and limits are public.
 
-**Stack:** `Python` · `CrewAI` · `FastAPI` · `Pydantic v2` · `OpenTelemetry/OpenInference` · `Docker`
-
-[Repository](https://github.com/shuxiachai/academic-commercialization-agent) ·
-[Live Demo](https://academic-commercialization-agent.up.railway.app)
-
-<br>
+[Repository](https://github.com/shuxiachai/academic-commercialization-agent) · [Case study](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/portfolio-case-study.md) · [Recovery evidence](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/results-2026-08-23-checkpoint-fault-recovery.md) · [Live app — access code or BYOK](https://academic-commercialization-agent.up.railway.app)
 
 ### [BushfireReadyGPT](https://github.com/shuxiachai/BushfireReadyGPT)
 
-*A local-first Australian bushfire preparedness report system combining deterministic analysis, controlled LLM generation, hybrid RAG, and human review.*
+**Hybrid RAG & governed generation** — A local-first Australian bushfire preparedness reporting workflow.
 
-- Built a fail-closed hybrid RAG pipeline with Qdrant, EmbeddingGemma, BM25/RRF, jurisdiction filtering, and prompt-injection boundaries.
-- Achieved **Top-8 Recall 100%, MRR 92.2%, and Top-1 85.3%**; all **8/8 model regression cases** passed governed report gates with zero safety violations.
+- Combines deterministic analysis, hybrid retrieval, local model generation and human review, building on the acknowledged upstream project.
+- The v0.6.0 structured-planning retrieval benchmark reports **MRR 0.922**, with **68 answerable queries and 5 safety negatives** in its evaluation set. Retrieval performance and report quality are evaluated separately.
 
-**Stack:** `Python` · `Streamlit` · `EmbeddingGemma` · `Qdrant` · `BM25/RRF` · `GitHub Actions`
-
-[Repository](https://github.com/shuxiachai/BushfireReadyGPT)
-
-<br>
+[Repository](https://github.com/shuxiachai/BushfireReadyGPT) · [Sample report](https://github.com/shuxiachai/BushfireReadyGPT/blob/main/examples/v0.6.0/cairns-council-report.md) · [Retrieval evaluation](https://github.com/shuxiachai/BushfireReadyGPT/blob/main/docs/benchmarks/rag-retrieval-v0.6.0.json) · [Upstream and attribution](https://github.com/shuxiachai/BushfireReadyGPT/blob/main/UPSTREAM.md)
 
 ### [LeyLineBook](https://github.com/shuxiachai/LeyLineBook)
 
-*A local-first task manager for Genshin Impact multi-account players and service studios, delivered as a Windows desktop application and offline PWA.*
+**Product delivery & data reliability** — A local-first task manager for Genshin Impact multi-account players and service studios.
 
-- Implemented cross-platform backup migration with ID/UUID remapping and foreign-key reconnection, plus Windows DPAPI credential protection.
-- Delivered **31 GitHub releases** across Windows and PWA runtimes and served **dozens of users**.
+- Windows desktop and offline PWA runtimes, with backup migration, data validation and platform-specific credential boundaries.
+- Automated tests, Windows packaging and PWA deployment support ongoing releases.
 
-**Stack:** `Python` · `SQLite` · `JavaScript` · `pywebview/WebView2` · `IndexedDB` · `PWA` · `PyInstaller`
+[Repository](https://github.com/shuxiachai/LeyLineBook) · [Windows download](https://github.com/shuxiachai/LeyLineBook/releases/latest) · [PWA](https://shuxiachai.github.io/LeyLineBook/) · [CI](https://github.com/shuxiachai/LeyLineBook/actions/workflows/ci.yml)
 
-[Repository](https://github.com/shuxiachai/LeyLineBook)
+## Engineering focus
 
----
+- **Workflows:** orchestration, structured outputs, guardrails and checkpoint recovery.
+- **Retrieval & evaluation:** hybrid search, source provenance, regression checks and experiment design.
+- **Delivery:** Python, FastAPI, Pydantic, SQL/SQLite, JavaScript, Docker, GitHub Actions and OpenTelemetry.
 
-## Core Stack
+Open to **2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform and AI Backend engineering**.
 
-**Agent & LLM**  
-`LangGraph` · `CrewAI` · `LangChain` · `Multi-Agent Workflows` · `Tool/Function Calling` · `Structured Output` · `Guardrails` · `Human-in-the-loop`
-
-**RAG & Evaluation**  
-`Embeddings` · `Qdrant` · `BM25/RRF` · `Hybrid Retrieval` · `Context Engineering` · `Agent/RAG Evaluation`
-
-**AI Application Engineering**  
-`Python` · `FastAPI` · `Pydantic v2` · `SQL/SQLite` · `JavaScript` · `Docker` · `GitHub Actions` · `Linux` · `OpenTelemetry/OpenInference`
-
----
-
-<div align="center">
-
-Open to 2027 new-grad opportunities in **AI Agent, LLM Application, Agent Platform, and AI Backend Engineering**.
-
-📧 [shuxiachai@163.com](mailto:shuxiachai@163.com)
-
-</div>
+[shuxiachai@163.com](mailto:shuxiachai@163.com)
