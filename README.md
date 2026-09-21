@@ -9,8 +9,6 @@ I build AI research tools, evidence-linked reporting workflows and local-first s
 
 邮箱：`shuxiachai@163.com`
 
-**[浏览我的项目 ↓](#selected-projects)**
-
 <a name="selected-projects"></a>
 ## 精选作品 / Selected projects
 
