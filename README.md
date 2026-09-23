@@ -7,7 +7,7 @@ I build AI research tools, evidence-linked reporting workflows and local-first s
 
 悉尼大学计算机硕士 · Master of Computer Science @ The University of Sydney · **2027 届**
 
-邮箱：`shuxiachai@163.com`
+邮箱：`shuxiachai@163.com` · 微信：`SHUXIA_chai`
 
 <a name="selected-projects"></a>
 ## 精选作品 / Selected projects
