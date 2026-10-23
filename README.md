@@ -7,7 +7,7 @@ I build verifiable AI agents and RAG apps: evidence first, pre-registered evalua
 
 悉尼大学计算机硕士 · Master of Computer Science @ The University of Sydney · **2027 届**
 
-邮箱：`shuxiachai@163.com` · 微信：`SHUXIA_chai`
+邮箱：`shuxiachai@163.com` · 微信：`SHUXIA_chai` · 领英：[linkedin.com/in/jingbo-chai](https://www.linkedin.com/in/jingbo-chai)
 
 ## 开源贡献 / Open-source contributions
 
