@@ -11,14 +11,15 @@ I build verifiable AI agents and RAG apps: evidence first, pre-registered evalua
 
 ## 开源贡献 / Open-source contributions
 
-**AgentScope**（3 万+ Star 的开源多智能体框架）：6 个 PR 已合并，修复 RAG 文档解析、向量检索和工具调用中的边界问题。  
-6 merged pull requests to AgentScope, fixing edge cases in RAG parsing, vector search and tool schemas.
+**AgentScope**（3 万+ Star 的开源多智能体框架）：7 个 PR 已合并，修复 RAG 文档解析、向量检索和工具调用中的边界问题。  
+7 merged pull requests to AgentScope, fixing edge cases in RAG parsing, vector search and tool schemas.
 
 - [#3257](https://github.com/agentscope-ai/agentscope/pull/3257) 工具调用：为 `partial` 包装的函数保留注解和文档字符串，修复工具 Schema 推断
 - [#3316](https://github.com/agentscope-ai/agentscope/pull/3316) 向量检索：限制 MongoDB 搜索的候选数量，修复 `top_k` 较大时参数越界
 - [#3343](https://github.com/agentscope-ai/agentscope/pull/3343) 向量检索：拒绝非正数的 Milvus 批大小，修复非空数据被静默跳过、没有写入的问题
 - [#3339](https://github.com/agentscope-ai/agentscope/pull/3339) 文档解析：PPTX 内嵌图片保留真实媒体类型，不再把 TIFF 等格式误标为 JPEG
 - [#3217](https://github.com/agentscope-ai/agentscope/pull/3217) 文档解析：PPTX 中延迟出现的 XML 错误统一转为明确的 `ValueError`
+- [#3745](https://github.com/agentscope-ai/agentscope/pull/3745) 文档解析：`TextParser` 去掉文件开头的 UTF-8 BOM，Excel 导出的 CSV 首个表头不再混入不可见字符
 - [#3205](https://github.com/agentscope-ai/agentscope/pull/3205) 文档：RAG 示例的安装说明补上必需的 Qdrant 依赖
 
 [查看我在 AgentScope 的全部 PR（含待审）](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai)
@@ -30,11 +31,11 @@ I build verifiable AI agents and RAG apps: evidence first, pre-registered evalua
 **输入研究主题或论文，生成带来源的商业化评估报告草稿：技术成熟度、专利、市场与风险。**  
 Turn a research topic or paper into a cited commercialization assessment draft.
 
-**[免密钥查看样例报告](https://academic-commercialization-agent.up.railway.app/samples) · [进入在线应用（需访问码或自备密钥）](https://academic-commercialization-agent.up.railway.app) · [查看源码](https://github.com/shuxiachai/academic-commercialization-agent)**
+**[免密钥查看样例报告](https://academic-agent.cc/samples) · [进入在线应用（免费注册，需自备密钥）](https://academic-agent.cc) · [查看源码](https://github.com/shuxiachai/academic-commercialization-agent)**
 
 <img src="https://raw.githubusercontent.com/shuxiachai/academic-commercialization-agent/872b1b38eebb966e7e7e6abba7d63cf385b5810c/assets/demo.gif" alt="ACA 演示：从历史记录打开一份已完成的 CAR-T 评估，依次查看评分卡、带引用的风险与机会、引用报告和一条保存的来源摘录" width="800">
 
-*当前界面（2026-10-23 录制），内容为 2026-08-14 的一次真实运行（CAR-T 血液肿瘤，`deepseek-chat`），录制时未调用模型或搜索，不代表当前模型的结果。*
+*界面录制于 2026-10-23，内容为 2026-08-14 的一次真实运行（CAR-T 血液肿瘤，`deepseek-chat`），录制时未调用模型或搜索，不代表当前模型的结果。*
 
 - **证据先行：** 先由代码检索并校验来源，再交给 6 个 LLM 阶段推理；加权总分由代码计算，不由模型给出。
 - **可恢复执行：** 结构化契约、检查点和脱敏追踪让失败可检查、任务可续跑；离线故障注入 [30/30 恢复](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/results-2026-08-23-checkpoint-fault-recovery.md)。
