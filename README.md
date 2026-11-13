@@ -91,5 +91,5 @@ Qwen3-0.6B 中文投诉信息抽取的训练、重载与固定评测闭环。使
 
 关注这里的 Agent 可靠性、RAG 评测与开源工具实践；使用问题与改进建议欢迎提交到对应项目的 Issues。
 
-面向 **2027 届 AI Agent、LLM 应用、Agent 平台与 AI 后端工程岗位**。  
-Open to 2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform and AI Backend engineering.
+面向 **2027 届 AI Agent、LLM 应用、Agent 平台与 AI 后端工程岗位**，意向城市：**深圳**。  
+Open to 2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform and AI Backend engineering. Preferred location: Shenzhen.
