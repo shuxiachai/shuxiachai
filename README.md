@@ -39,6 +39,11 @@ I build verifiable AI agents and RAG apps: evidence first, pre-registered evalua
 
 [查看我在 AgentScope 的全部 PR（含待审）](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai)
 
+**oxc**（2.3 万 Star 的高性能 JavaScript 工具集）：13 个 PR 已合并，修复 linter 规则自动修复中的边界问题：保留注释、换行和括号分组，不再做会改变代码行为的修复。  
+13 merged pull requests to oxc, fixing linter auto-fix edge cases around comments, line breaks, grouping and behaviour-changing fixes.
+
+[查看我在 oxc 的已合并 PR](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)
+
 ## `02` 代表作 / Featured project
 
 ### ACA · 论文商业化评估助手
