@@ -22,7 +22,28 @@ I build verifiable AI agents and RAG apps: evidence first, pre-registered evalua
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-1E293B?style=flat-square&logo=githubactions&logoColor=2088FF)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-1E293B?style=flat-square&logo=opentelemetry&logoColor=F5A800)
 
-## `01` 开源贡献 / Open-source contributions
+## `01` 代表作 / Featured project
+
+### ACA · 论文商业化评估助手
+
+`Multi-agent` `CrewAI` `FastAPI` `OpenTelemetry` `Checkpointing`
+
+**输入研究主题或论文，生成带来源的商业化评估报告草稿：技术成熟度、专利、市场与风险。**  
+Turn a research topic or paper into a cited commercialization assessment draft.
+
+**[免密钥查看样例报告](https://academic-agent.cc/samples) · [进入在线应用（免费注册，需自备密钥）](https://academic-agent.cc) · [查看源码](https://github.com/shuxiachai/academic-commercialization-agent)**
+
+<img src="https://raw.githubusercontent.com/shuxiachai/academic-commercialization-agent/872b1b38eebb966e7e7e6abba7d63cf385b5810c/assets/demo.gif" alt="ACA 演示：从历史记录打开一份已完成的 CAR-T 评估，依次查看评分卡、带引用的风险与机会、引用报告和一条保存的来源摘录" width="800">
+
+*界面录制于 2026-10-23，内容为 2026-08-14 的一次真实运行（CAR-T 血液肿瘤，`deepseek-chat`），录制时未调用模型或搜索，不代表当前模型的结果。*
+
+- **证据先行：** 先由代码检索并校验来源，再交给 6 个 LLM 阶段推理；加权总分由代码计算，不由模型给出。
+- **可恢复执行：** 结构化契约、检查点和脱敏追踪让失败可检查、任务可续跑；离线故障注入 [30/30 恢复](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/results-2026-08-23-checkpoint-fault-recovery.md)。
+- **公开评测：** 实验先写方案再运行，仓库公开 90+ 份预注册方案、170+ 份结果记录和 10+ 份勘误。[实验索引](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/experiment-index.md) · [证据台账](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/evidence-status.md)
+
+报告草稿用于研究初筛，仍需人工核查。
+
+## `02` 开源贡献 / Open-source contributions
 
 **AgentScope**（3 万+ Star 的开源多智能体框架）：7 个 PR 已合并，修复 RAG 文档解析、向量检索和工具调用中的边界问题。  
 7 merged pull requests to AgentScope, fixing edge cases in RAG parsing, vector search and tool schemas.
@@ -43,27 +64,6 @@ I build verifiable AI agents and RAG apps: evidence first, pre-registered evalua
 13 merged pull requests to oxc, fixing linter auto-fix edge cases around comments, line breaks, grouping and behaviour-changing fixes.
 
 [查看我在 oxc 的已合并 PR](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)
-
-## `02` 代表作 / Featured project
-
-### ACA · 论文商业化评估助手
-
-`Multi-agent` `CrewAI` `FastAPI` `OpenTelemetry` `Checkpointing`
-
-**输入研究主题或论文，生成带来源的商业化评估报告草稿：技术成熟度、专利、市场与风险。**  
-Turn a research topic or paper into a cited commercialization assessment draft.
-
-**[免密钥查看样例报告](https://academic-agent.cc/samples) · [进入在线应用（免费注册，需自备密钥）](https://academic-agent.cc) · [查看源码](https://github.com/shuxiachai/academic-commercialization-agent)**
-
-<img src="https://raw.githubusercontent.com/shuxiachai/academic-commercialization-agent/872b1b38eebb966e7e7e6abba7d63cf385b5810c/assets/demo.gif" alt="ACA 演示：从历史记录打开一份已完成的 CAR-T 评估，依次查看评分卡、带引用的风险与机会、引用报告和一条保存的来源摘录" width="800">
-
-*界面录制于 2026-10-23，内容为 2026-08-14 的一次真实运行（CAR-T 血液肿瘤，`deepseek-chat`），录制时未调用模型或搜索，不代表当前模型的结果。*
-
-- **证据先行：** 先由代码检索并校验来源，再交给 6 个 LLM 阶段推理；加权总分由代码计算，不由模型给出。
-- **可恢复执行：** 结构化契约、检查点和脱敏追踪让失败可检查、任务可续跑；离线故障注入 [30/30 恢复](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/results-2026-08-23-checkpoint-fault-recovery.md)。
-- **公开评测：** 实验先写方案再运行，仓库公开 90+ 份预注册方案、170+ 份结果记录和 10+ 份勘误。[实验索引](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/experiment-index.md) · [证据台账](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/evidence-status.md)
-
-报告草稿用于研究初筛，仍需人工核查。
 
 ## `03` 其他项目 / More projects
 
