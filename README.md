@@ -1,6 +1,6 @@
 <img src="./assets/banner.svg" width="100%" alt="Jingbo Chai · 柴靖博：AI Agent / LLM 应用开发。证据先行的 Agent 流程：代码检索并校验来源，6 个 LLM 阶段推理，代码计算评分">
 
-**AI Agent / LLM 应用开发 · AgentScope 开源贡献者**
+**AI Agent / LLM 应用开发 · AgentScope 与 oxc 开源贡献者**
 
 我做可验证的 AI Agent 与 RAG 应用：先固定证据再让模型推理，实验先写方案再运行，结果和不足一起公开。  
 I build verifiable AI agents and RAG apps: evidence first, pre-registered evaluation, results published with their limits.
