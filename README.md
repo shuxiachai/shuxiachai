@@ -1,9 +1,11 @@
 <img src="./assets/banner.svg" width="100%" alt="Jingbo Chai · 柴靖博：AI Agent / LLM 应用开发。证据先行的 Agent 流程：代码检索并校验来源，6 个 LLM 阶段推理，代码计算评分">
 
+<div align="center">
+
 **AI Agent / LLM 应用开发 · AgentScope 与 oxc 开源贡献者**
 
 我做可验证的 AI Agent 与 RAG 应用：先固定证据再让模型推理，实验先写方案再运行，结果和不足一起公开。  
-I build verifiable AI agents and RAG apps: evidence first, pre-registered evaluation, results published with their limits.
+<sub>I build verifiable AI agents and RAG apps: evidence first, pre-registered evaluation, results published with their limits.</sub>
 
 悉尼大学计算机硕士 · Master of Computer Science @ The University of Sydney · **2027 届**
 
@@ -22,6 +24,8 @@ I build verifiable AI agents and RAG apps: evidence first, pre-registered evalua
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-1E293B?style=flat-square&logo=githubactions&logoColor=2088FF)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-1E293B?style=flat-square&logo=opentelemetry&logoColor=F5A800)
 
+</div>
+
 ## `01` 代表作 / Featured project
 
 ### ACA · 论文商业化评估助手
@@ -29,9 +33,11 @@ I build verifiable AI agents and RAG apps: evidence first, pre-registered evalua
 `Multi-agent` `CrewAI` `FastAPI` `OpenTelemetry` `Checkpointing`
 
 **输入研究主题或论文，生成带来源的商业化评估报告草稿：技术成熟度、专利、市场与风险。**  
-Turn a research topic or paper into a cited commercialization assessment draft.
+<sub>Turn a research topic or paper into a cited commercialization assessment draft.</sub>
 
-**[免密钥查看样例报告](https://academic-agent.cc/samples) · [进入在线应用（免费注册，需自备密钥）](https://academic-agent.cc) · [查看源码](https://github.com/shuxiachai/academic-commercialization-agent)**
+<a href="https://academic-agent.cc/samples"><img src="./assets/btn-samples.svg" height="56" alt="免密钥查看样例报告"></a>
+<a href="https://academic-agent.cc"><img src="./assets/btn-app.svg" height="56" alt="进入在线应用（免费注册，需自备密钥）"></a>
+<a href="https://github.com/shuxiachai/academic-commercialization-agent"><img src="./assets/btn-source.svg" height="56" alt="查看源码"></a>
 
 <img src="https://raw.githubusercontent.com/shuxiachai/academic-commercialization-agent/872b1b38eebb966e7e7e6abba7d63cf385b5810c/assets/demo.gif" alt="ACA 演示：从历史记录打开一份已完成的 CAR-T 评估，依次查看评分卡、带引用的风险与机会、引用报告和一条保存的来源摘录" width="800">
 
@@ -46,7 +52,7 @@ Turn a research topic or paper into a cited commercialization assessment draft.
 ## `02` 开源贡献 / Open-source contributions
 
 **AgentScope**（3 万+ Star 的开源多智能体框架）：7 个 PR 已合并，修复 RAG 文档解析、向量检索和工具调用中的边界问题。  
-7 merged pull requests to AgentScope, fixing edge cases in RAG parsing, vector search and tool schemas.
+<sub>7 merged pull requests to AgentScope, fixing edge cases in RAG parsing, vector search and tool schemas.</sub>
 
 | PR | 模块 | 修复内容 |
 | --- | --- | --- |
@@ -61,7 +67,7 @@ Turn a research topic or paper into a cited commercialization assessment draft.
 [查看我在 AgentScope 的全部 PR（含待审）](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai)
 
 **oxc**（2.3 万 Star 的高性能 JavaScript 工具集）：13 个 PR 已合并，修复 linter 规则自动修复中的边界问题：保留注释、换行和括号分组，不再做会改变代码行为的修复。  
-13 merged pull requests to oxc, fixing linter auto-fix edge cases around comments, line breaks, grouping and behaviour-changing fixes.
+<sub>13 merged pull requests to oxc, fixing linter auto-fix edge cases around comments, line breaks, grouping and behaviour-changing fixes.</sub>
 
 [查看我在 oxc 的已合并 PR](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)
 
@@ -97,4 +103,4 @@ Qwen3-0.6B 中文投诉信息抽取的训练、重载与固定评测闭环。使
 关注这里的 Agent 可靠性、RAG 评测与开源工具实践；使用问题与改进建议欢迎提交到对应项目的 Issues。
 
 面向 **2027 届 AI Agent、LLM 应用、Agent 平台与 AI 后端工程岗位**，意向城市：**深圳**。  
-Open to 2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform and AI Backend engineering. Preferred location: Shenzhen.
+<sub>Open to 2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform and AI Backend engineering. Preferred location: Shenzhen.</sub>
