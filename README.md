@@ -60,7 +60,10 @@
   修复 RAG 文档解析、向量检索和工具 Schema 推断中的边界问题，以及实时 Agent 测试的稳定性。
 - **[oxc](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 2 万+ Star 的高性能 JavaScript 工具集 · **15 个已合并**<br>
   修复 linter 自动修复的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。
-- **其他：** [GreptimeDB](https://github.com/GreptimeTeam/greptimedb/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)（可观测性数据库）2 个、[Autoware](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)（自动驾驶开源软件）1 个已合并。
+- **[GreptimeDB](https://github.com/GreptimeTeam/greptimedb/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 6 千+ Star 的可观测性数据库 · **2 个已合并**<br>
+  修复首次启动时误报的日志目录错误，并清理误提交进仓库的日志文件。
+- **[Autoware](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 1 千+ Star 的自动驾驶开源软件 · **1 个已合并**<br>
+  修正两个 MRM 停车模块 README 里的 Schema 路径，修复文档页的渲染错误。
 
 <details>
 <summary>AgentScope · 8 个已合并 PR 明细</summary>
@@ -102,13 +105,21 @@
 </details>
 
 <details>
-<summary>GreptimeDB / Autoware · 3 个已合并 PR 明细</summary>
+<summary>GreptimeDB · 2 个已合并 PR 明细</summary>
 
 | PR | 修复内容 |
 | --- | --- |
-| [GreptimeDB #10446](https://github.com/GreptimeTeam/greptimedb/pull/10446) | **遥测**：首次启动时不再误报日志目录错误（绕开上游 tracing 库的已知问题） |
-| [GreptimeDB #10445](https://github.com/GreptimeTeam/greptimedb/pull/10445) | **清理**：删除误提交进仓库的 `merge-main.log` |
-| [Autoware #13624](https://github.com/autowarefoundation/autoware_universe/pull/13624) | **文档**：修正两个 MRM 停车模块 README 里的 Schema 路径，修复文档页的渲染错误 |
+| [#10446](https://github.com/GreptimeTeam/greptimedb/pull/10446) | **遥测**：首次启动时不再误报日志目录错误（绕开上游 tracing 库的已知问题） |
+| [#10445](https://github.com/GreptimeTeam/greptimedb/pull/10445) | **清理**：删除误提交进仓库的 `merge-main.log` |
+
+</details>
+
+<details>
+<summary>Autoware · 1 个已合并 PR 明细</summary>
+
+| PR | 修复内容 |
+| --- | --- |
+| [#13624](https://github.com/autowarefoundation/autoware_universe/pull/13624) | **文档**：修正两个 MRM 停车模块 README 里的 Schema 路径，修复文档页的渲染错误 |
 
 </details>
 
