@@ -53,8 +53,17 @@
 
 ## `02` 开源贡献 / Open-source contributions
 
-**AgentScope**（3 万+ Star 的开源多智能体框架）：8 个 PR 已合并，修复 RAG 文档解析、向量检索、工具调用中的边界问题和实时 Agent 测试的稳定性。  
-<sub>8 merged pull requests to AgentScope, fixing edge cases in RAG parsing, vector search and tool schemas, plus a flaky realtime-agent test.</sub>
+**在 AgentScope、oxc 等开源项目中已合并 20+ 个 PR，主要修复 RAG、工具调用和 linter 自动修复中的边界问题。**
+<sub>20+ merged pull requests across open-source projects, mostly edge-case fixes in RAG, tool calling and linter auto-fixes.</sub>
+
+- **[AgentScope](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 3 万+ Star 的多智能体框架 · **8 个已合并**
+  修复 RAG 文档解析、向量检索和工具 Schema 推断中的边界问题，以及实时 Agent 测试的稳定性。
+- **[oxc](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 2 万+ Star 的高性能 JavaScript 工具集 · **15 个已合并**
+  修复 linter 自动修复的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。
+- **其他：** [GreptimeDB](https://github.com/GreptimeTeam/greptimedb/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)（可观测性数据库）2 个、[Autoware](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)（自动驾驶开源软件）1 个已合并。
+
+<details>
+<summary>AgentScope 已合并 PR 明细</summary>
 
 | PR | 修复内容 |
 | --- | --- |
@@ -67,12 +76,7 @@
 | [#3981](https://github.com/agentscope-ai/agentscope/pull/3981) | **实时 Agent 测试**：模拟传输改为等事件完成再结束，不再按帧时钟提前收尾，修复 Windows CI 上因时钟精度导致的偶发失败 |
 | [#3205](https://github.com/agentscope-ai/agentscope/pull/3205) | **文档**：RAG 示例的安装说明补上必需的 Qdrant 依赖 |
 
-[查看我在 AgentScope 的全部 PR（含待审）](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai)
-
-**oxc**（2.3 万 Star 的高性能 JavaScript 工具集）：15 个 PR 已合并，修复 linter 规则自动修复中的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。  
-<sub>15 merged pull requests to oxc, fixing linter auto-fix edge cases around comments, line breaks, grouping, statement boundaries and behaviour-changing fixes.</sub>
-
-[查看我在 oxc 的已合并 PR](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)
+</details>
 
 ## `03` 其他项目 / More projects
 
