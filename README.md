@@ -63,7 +63,7 @@
 - **其他：** [GreptimeDB](https://github.com/GreptimeTeam/greptimedb/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)（可观测性数据库）2 个、[Autoware](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)（自动驾驶开源软件）1 个已合并。
 
 <details>
-<summary>AgentScope 已合并 PR 明细</summary>
+<summary>AgentScope · 8 个已合并 PR 明细</summary>
 
 | PR | 修复内容 |
 | --- | --- |
@@ -75,6 +75,40 @@
 | [#3745](https://github.com/agentscope-ai/agentscope/pull/3745) | **文档解析**：`TextParser` 去掉文件开头的 UTF-8 BOM，Excel 导出的 CSV 首个表头不再混入不可见字符 |
 | [#3981](https://github.com/agentscope-ai/agentscope/pull/3981) | **实时 Agent 测试**：模拟传输改为等事件完成再结束，不再按帧时钟提前收尾，修复 Windows CI 上因时钟精度导致的偶发失败 |
 | [#3205](https://github.com/agentscope-ai/agentscope/pull/3205) | **文档**：RAG 示例的安装说明补上必需的 Qdrant 依赖 |
+
+</details>
+
+<details>
+<summary>oxc · 15 个已合并 PR 明细</summary>
+
+| PR | 修复内容 |
+| --- | --- |
+| [#29590](https://github.com/oxc-project/oxc/pull/29590) | **eslint/no-var**：只在改用 `let`/`const` 不会改变行为时才自动修复，避免修复后结果变化或无法解析 |
+| [#29591](https://github.com/oxc-project/oxc/pull/29591) | **unicorn/prefer-response-static-json**：修正 `new` 与 `Response` 之间有注释时修复建议的三处错误 |
+| [#29592](https://github.com/oxc-project/oxc/pull/29592) | **eslint/curly**：语句需要分号时不再删除大括号，避免和后面的代码连在一起 |
+| [#29593](https://github.com/oxc-project/oxc/pull/29593) | **typescript/prefer-function-type**：`export default interface` 不再重复报告，也不再做错误的修复 |
+| [#29595](https://github.com/oxc-project/oxc/pull/29595) | **import/no-duplicates**：合并导入时正确识别尾随逗号后面的注释 |
+| [#29596](https://github.com/oxc-project/oxc/pull/29596) | **unicorn/prefer-single-call**：合并调用时跳过注释识别尾随逗号，不再多加一个逗号 |
+| [#29597](https://github.com/oxc-project/oxc/pull/29597) | **unicorn/prefer-set-size**：修复后在关键字和替换内容之间保留空格，避免 `return[...]` 一类代码连在一起 |
+| [#29598](https://github.com/oxc-project/oxc/pull/29598) | **unicorn/prefer-at**：`slice().pop()` 和 `slice().shift()` 的修复保留括号分组 |
+| [#29600](https://github.com/oxc-project/oxc/pull/29600) | **unicorn/no-useless-spread**：展开参数里的数组空位改为 `undefined`，不再生成非法的空参数 |
+| [#29601](https://github.com/oxc-project/oxc/pull/29601) | **ASI 检测**：判断修复前是否需要补分号时，不再跳过两个注释之间的代码 |
+| [#29602](https://github.com/oxc-project/oxc/pull/29602) | **eslint/no-useless-rename**：解构赋值的目标带括号且有默认值时不再自动修复，避免生成非法语法 |
+| [#29604](https://github.com/oxc-project/oxc/pull/29604) | **jest/no-untyped-mock-factory**：按原样复制模块名，需要转义的名字不再出错 |
+| [#29606](https://github.com/oxc-project/oxc/pull/29606) | **oxc/only-used-in-recursion**：删除参数时保留行注释后的换行，避免后面的 `)` 被吞进注释 |
+| [#29633](https://github.com/oxc-project/oxc/pull/29633) | **eslint 多条规则**：无分号代码里，自动修复不再让语句以 `(`、`[`、模板字符串等开头而接上上一行 |
+| [#29634](https://github.com/oxc-project/oxc/pull/29634) | **typescript/consistent-type-definitions**：接口改成类型别名后，同一行后面还有代码时补上分号 |
+
+</details>
+
+<details>
+<summary>GreptimeDB / Autoware · 3 个已合并 PR 明细</summary>
+
+| PR | 修复内容 |
+| --- | --- |
+| [GreptimeDB #10446](https://github.com/GreptimeTeam/greptimedb/pull/10446) | **遥测**：首次启动时不再误报日志目录错误（绕开上游 tracing 库的已知问题） |
+| [GreptimeDB #10445](https://github.com/GreptimeTeam/greptimedb/pull/10445) | **清理**：删除误提交进仓库的 `merge-main.log` |
+| [Autoware #13624](https://github.com/autowarefoundation/autoware_universe/pull/13624) | **文档**：修正两个 MRM 停车模块 README 里的 Schema 路径，修复文档页的渲染错误 |
 
 </details>
 
