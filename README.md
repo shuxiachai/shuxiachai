@@ -53,12 +53,12 @@
 
 ## `02` 开源贡献 / Open-source contributions
 
-**在 AgentScope、oxc 等开源项目中已合并 20+ 个 PR，主要修复 RAG、工具调用和 linter 自动修复中的边界问题。**
+**在 AgentScope、oxc 等开源项目中已合并 20+ 个 PR，主要修复 RAG、工具调用和 linter 自动修复中的边界问题。**<br>
 <sub>20+ merged pull requests across open-source projects, mostly edge-case fixes in RAG, tool calling and linter auto-fixes.</sub>
 
-- **[AgentScope](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 3 万+ Star 的多智能体框架 · **8 个已合并**
+- **[AgentScope](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 3 万+ Star 的多智能体框架 · **8 个已合并**<br>
   修复 RAG 文档解析、向量检索和工具 Schema 推断中的边界问题，以及实时 Agent 测试的稳定性。
-- **[oxc](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 2 万+ Star 的高性能 JavaScript 工具集 · **15 个已合并**
+- **[oxc](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 2 万+ Star 的高性能 JavaScript 工具集 · **15 个已合并**<br>
   修复 linter 自动修复的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。
 - **其他：** [GreptimeDB](https://github.com/GreptimeTeam/greptimedb/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)（可观测性数据库）2 个、[Autoware](https://github.com/autowarefoundation/autoware_universe/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)（自动驾驶开源软件）1 个已合并。
 
