@@ -53,8 +53,8 @@
 
 ## `02` 开源贡献 / Open-source contributions
 
-**AgentScope**（3 万+ Star 的开源多智能体框架）：7 个 PR 已合并，修复 RAG 文档解析、向量检索和工具调用中的边界问题。  
-<sub>7 merged pull requests to AgentScope, fixing edge cases in RAG parsing, vector search and tool schemas.</sub>
+**AgentScope**（3 万+ Star 的开源多智能体框架）：8 个 PR 已合并，修复 RAG 文档解析、向量检索、工具调用中的边界问题和实时 Agent 测试的稳定性。  
+<sub>8 merged pull requests to AgentScope, fixing edge cases in RAG parsing, vector search and tool schemas, plus a flaky realtime-agent test.</sub>
 
 | PR | 修复内容 |
 | --- | --- |
@@ -64,12 +64,13 @@
 | [#3339](https://github.com/agentscope-ai/agentscope/pull/3339) | **文档解析**：PPTX 内嵌图片保留真实媒体类型，不再把 TIFF 等格式误标为 JPEG |
 | [#3217](https://github.com/agentscope-ai/agentscope/pull/3217) | **文档解析**：PPTX 中延迟出现的 XML 错误统一转为明确的 `ValueError` |
 | [#3745](https://github.com/agentscope-ai/agentscope/pull/3745) | **文档解析**：`TextParser` 去掉文件开头的 UTF-8 BOM，Excel 导出的 CSV 首个表头不再混入不可见字符 |
+| [#3981](https://github.com/agentscope-ai/agentscope/pull/3981) | **实时 Agent 测试**：模拟传输改为等事件完成再结束，不再按帧时钟提前收尾，修复 Windows CI 上因时钟精度导致的偶发失败 |
 | [#3205](https://github.com/agentscope-ai/agentscope/pull/3205) | **文档**：RAG 示例的安装说明补上必需的 Qdrant 依赖 |
 
 [查看我在 AgentScope 的全部 PR（含待审）](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai)
 
-**oxc**（2.3 万 Star 的高性能 JavaScript 工具集）：13 个 PR 已合并，修复 linter 规则自动修复中的边界问题：保留注释、换行和括号分组，不再做会改变代码行为的修复。  
-<sub>13 merged pull requests to oxc, fixing linter auto-fix edge cases around comments, line breaks, grouping and behaviour-changing fixes.</sub>
+**oxc**（2.3 万 Star 的高性能 JavaScript 工具集）：15 个 PR 已合并，修复 linter 规则自动修复中的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。  
+<sub>15 merged pull requests to oxc, fixing linter auto-fix edge cases around comments, line breaks, grouping, statement boundaries and behaviour-changing fixes.</sub>
 
 [查看我在 oxc 的已合并 PR](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)
 
