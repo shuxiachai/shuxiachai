@@ -41,9 +41,9 @@
 <a href="https://academic-agent.cc"><img src="./assets/btn-app.svg" height="56" alt="进入在线应用（免费注册，需自备密钥）"></a>
 <a href="https://github.com/shuxiachai/academic-commercialization-agent"><img src="./assets/btn-source.svg" height="56" alt="查看源码"></a>
 
-<img src="https://raw.githubusercontent.com/shuxiachai/academic-commercialization-agent/872b1b38eebb966e7e7e6abba7d63cf385b5810c/assets/demo.gif" alt="ACA 演示：从历史记录打开一份已完成的 CAR-T 评估，依次查看评分卡、带引用的风险与机会、引用报告和一条保存的来源摘录" width="800">
+<img src="https://raw.githubusercontent.com/shuxiachai/academic-commercialization-agent/99b294fa705b2cfe4696f13958ab289540d10f3d/assets/demo.gif" alt="ACA 演示：填写课题和决策场景，随后打开已完成的钙钛矿-硅叠层电池评估，依次查看报告给出的结论（DEFER，暂缓）、带总分的决策简报、评分卡、带引用的风险、报告中写明结论的段落和一条保存的来源摘录" width="800">
 
-*界面录制于 2026-10-23，内容为 2026-08-14 的一次真实运行（CAR-T 血液肿瘤，`deepseek-chat`），录制时未调用模型或搜索，不代表当前模型的结果。*
+*界面和内容均录制于 2026-11-20：一次真实运行（钙钛矿-硅叠层太阳能电池，决策场景为技术转移办公室决定是否许可这项技术，`claude-opus-5-5`）。录制时未调用模型或搜索；这是一个模型的一次运行，不是评测结果。*
 
 - **证据先行：** 先由代码检索并校验来源，再交给 6 个 LLM 阶段推理；加权总分由代码计算，不由模型给出。
 - **可恢复执行：** 结构化契约、检查点和脱敏追踪让失败可检查、任务可续跑；离线故障注入 [30/30 恢复](https://github.com/shuxiachai/academic-commercialization-agent/blob/main/docs/results-2026-08-23-checkpoint-fault-recovery.md)。
