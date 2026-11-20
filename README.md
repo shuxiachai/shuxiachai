@@ -62,8 +62,8 @@
   修复 linter 自动修复的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。
 - **[GreptimeDB](https://github.com/GreptimeTeam/greptimedb/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 6 千+ Star 的可观测性数据库 · **2 个已合并**<br>
   修复首次启动时误报的日志目录错误，并清理误提交进仓库的日志文件。
-- **[Autoware](https://github.com/search?q=author%3Ashuxiachai+org%3Aautowarefoundation+is%3Apr+is%3Amerged&type=pullrequests)** · 1 千+ Star 的自动驾驶开源软件 · **3 个已合并**（Universe 1 个、Core 2 个）<br>
-  修正多个模块 README 里过时的 Schema 路径和一处无效的参数 Schema 引用，修复文档页的渲染错误和参数校验失败。
+- **[Autoware](https://github.com/search?q=author%3Ashuxiachai+org%3Aautowarefoundation+is%3Apr+is%3Amerged&type=pullrequests)** · 1 千+ Star 的自动驾驶开源软件 · **4 个已合并**（Universe 2 个、Core 2 个）<br>
+  修正多个模块 README 里过时的 Schema 路径，以及参数 Schema 里的无效引用和缺失参数，修复文档页的渲染错误和参数校验失败。
 
 <details>
 <summary>AgentScope · 8 个已合并 PR 明细</summary>
@@ -115,11 +115,12 @@
 </details>
 
 <details>
-<summary>Autoware · 3 个已合并 PR 明细</summary>
+<summary>Autoware · 4 个已合并 PR 明细</summary>
 
 | PR | 修复内容 |
 | --- | --- |
 | [#13624](https://github.com/autowarefoundation/autoware_universe/pull/13624) | **Universe · 文档**：修正两个 MRM 停车模块 README 里的 Schema 路径，修复文档页的渲染错误 |
+| [#13625](https://github.com/autowarefoundation/autoware_universe/pull/13625) | **Universe · 参数 Schema**：参数 Schema 漏了新加的 `range_thresholding_mode`，两个参数文件都无法通过校验；补上后校验通过，文档里的参数表也有了这一项 |
 | [#1541](https://github.com/autowarefoundation/autoware_core/pull/1541) | **Core · 参数 Schema**：参数 Schema 引用了不存在的定义，参数文件无法通过校验；修正引用和 README 里的旧路径，并重命名 Schema 文件，让 CI 的 Schema 检查能覆盖到它 |
 | [#1542](https://github.com/autowarefoundation/autoware_core/pull/1542) | **Core · 文档**：模块迁移目录后 README 仍引用旧的 Schema 路径，文档页渲染出错；修正后恢复显示参数表 |
 
