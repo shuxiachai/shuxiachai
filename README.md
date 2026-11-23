@@ -56,7 +56,7 @@
 **在 AgentScope、oxc 等开源项目中已合并 20+ 个 PR，主要修复 RAG、工具调用和 linter 自动修复中的边界问题。**<br>
 <sub>20+ merged pull requests across open-source projects, mostly edge-case fixes in RAG, tool calling and linter auto-fixes.</sub>
 
-- **[AgentScope](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 3 万+ Star 的多智能体框架 · **8 个已合并**<br>
+- **[AgentScope](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 3 万+ Star 的多智能体框架 · **9 个已合并**<br>
   修复 RAG 文档解析、向量检索和工具 Schema 推断中的边界问题，以及实时 Agent 测试的稳定性。
 - **[oxc](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 2 万+ Star 的高性能 JavaScript 工具集 · **15 个已合并**<br>
   修复 linter 自动修复的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。
@@ -66,7 +66,7 @@
   修正多个模块 README 里过时的 Schema 路径，以及参数 Schema 里的无效引用和缺失参数，修复文档页的渲染错误和参数校验失败。
 
 <details>
-<summary>AgentScope · 8 个已合并 PR 明细</summary>
+<summary>AgentScope · 9 个已合并 PR 明细</summary>
 
 | PR | 修复内容 |
 | --- | --- |
@@ -76,6 +76,7 @@
 | [#3339](https://github.com/agentscope-ai/agentscope/pull/3339) | **文档解析**：PPTX 内嵌图片保留真实媒体类型，不再把 TIFF 等格式误标为 JPEG |
 | [#3217](https://github.com/agentscope-ai/agentscope/pull/3217) | **文档解析**：PPTX 中延迟出现的 XML 错误统一转为明确的 `ValueError` |
 | [#3745](https://github.com/agentscope-ai/agentscope/pull/3745) | **文档解析**：`TextParser` 去掉文件开头的 UTF-8 BOM，Excel 导出的 CSV 首个表头不再混入不可见字符 |
+| [#4110](https://github.com/agentscope-ai/agentscope/pull/4110) | **文档解析**：Word 文本框里的图片不再被重复读出两三次，正文和表格里都只输出一次 |
 | [#3981](https://github.com/agentscope-ai/agentscope/pull/3981) | **实时 Agent 测试**：模拟传输改为等事件完成再结束，不再按帧时钟提前收尾，修复 Windows CI 上因时钟精度导致的偶发失败 |
 | [#3205](https://github.com/agentscope-ai/agentscope/pull/3205) | **文档**：RAG 示例的安装说明补上必需的 Qdrant 依赖 |
 
