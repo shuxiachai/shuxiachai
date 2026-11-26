@@ -41,7 +41,7 @@
 <a href="https://academic-agent.cc"><img src="./assets/btn-app.svg" height="56" alt="进入在线应用（免费注册，需自备密钥）"></a>
 <a href="https://github.com/shuxiachai/academic-commercialization-agent"><img src="./assets/btn-source.svg" height="56" alt="查看源码"></a>
 
-<img src="https://raw.githubusercontent.com/shuxiachai/academic-commercialization-agent/99b294fa705b2cfe4696f13958ab289540d10f3d/assets/demo.gif" alt="ACA 演示：填写课题和决策场景，随后打开已完成的钙钛矿-硅叠层电池评估，依次查看报告给出的结论（DEFER，暂缓）、带总分的决策简报、评分卡、带引用的风险、报告中写明结论的段落和一条保存的来源摘录" width="800">
+<a href="https://academic-agent.cc/samples/perovskite-silicon-tandem"><img src="https://raw.githubusercontent.com/shuxiachai/academic-commercialization-agent/99b294fa705b2cfe4696f13958ab289540d10f3d/assets/demo.gif" alt="ACA 演示：填写课题和决策场景，随后打开已完成的钙钛矿-硅叠层电池评估，依次查看报告给出的结论（DEFER，暂缓）、带总分的决策简报、评分卡、带引用的风险、报告中写明结论的段落和一条保存的来源摘录" width="800"></a>
 
 *界面和内容均录制于 2026-11-20：一次真实运行（钙钛矿-硅叠层太阳能电池，决策场景为技术转移办公室决定是否许可这项技术，`claude-opus-5-5`）。录制时未调用模型或搜索；这是一个模型的一次运行，不是评测结果。*
 
