@@ -1,4 +1,4 @@
-<img src="./assets/banner.svg" width="100%" alt="Jingbo Chai · 柴靖博：AI Agent / LLM 应用开发。证据先行的 Agent 流程：代码检索并校验来源，6 个 LLM 阶段推理，代码计算评分">
+<picture><img src="./assets/banner.svg" width="100%" alt="Jingbo Chai · 柴靖博：AI Agent / LLM 应用开发。证据先行的 Agent 流程：代码检索并校验来源，6 个 LLM 阶段推理，代码计算评分"></picture>
 
 <div align="center">
 
@@ -175,4 +175,4 @@
 
 面向 **2027 届 AI Agent、LLM 应用、Agent 平台与 AI 后端工程岗位**，意向城市：**深圳**。
 
-<img src="./assets/footer.svg" width="100%" alt="status.yml：Open to 2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform and AI Backend engineering. Preferred location: Shenzhen. Issues and ideas welcome on each project.">
+<picture><img src="./assets/footer.svg" width="100%" alt="status.yml：Open to 2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform and AI Backend engineering. Preferred location: Shenzhen. Issues and ideas welcome on each project."></picture>
