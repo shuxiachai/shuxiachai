@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="210" viewBox="0 0 410 210" role="img" aria-labelledby="t d">
+  <title id="t">Qwen3 LoRA</title>
+  <desc id="d">Qwen3 LoRA 信息抽取复现：Qwen3-0.6B 中文投诉信息抽取的训练、重载与固定评测闭环；100 条虚构数据，测试集四字段全对从 6/20 提升到 19/20，仅为小规模合成数据上的观察。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.6" stop-color="#0e1a2f"/>
+      <stop offset="1" stop-color="#0a2b36"/>
+    </linearGradient>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M22 0H0V22" fill="none" stroke="#7dd3fc" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="410" height="210" rx="14"/></clipPath>
+  </defs>
+  <style>
+    .sans { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "Cascadia Code", "JetBrains Mono", Menlo, Consolas, "Liberation Mono", "Microsoft YaHei", "PingFang SC", monospace; }
+  </style>
+  <g clip-path="url(#card)">
+    <rect width="410" height="210" fill="url(#bg)"/>
+    <rect width="410" height="210" fill="url(#grid)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="409" height="209" rx="14" fill="none" stroke="#7dd3fc" stroke-opacity="0.18"/>
+  <rect x="24" y="44" width="362" height="1.5" fill="url(#line)"/>
+  <text x="24" y="32" class="mono" font-size="13" fill="#64748b">~/projects/qwen3-lora</text>
+  <text x="386" y="32" class="mono" font-size="13" fill="#64748b" text-anchor="end">● Python</text>
+  <text x="24" y="76" class="sans" font-size="24" font-weight="700" fill="#e2e8f0">Qwen3 LoRA</text>
+  <text x="24" y="99" class="sans" font-size="15" fill="#94a3b8">中文投诉信息抽取复现</text>
+  <text x="386" y="78" class="mono" font-size="32" font-weight="700" fill="#a78bfa" text-anchor="end">19/20</text>
+  <text x="386" y="99" class="mono" font-size="12" fill="#64748b" text-anchor="end">四字段全对 · 原 6/20</text>
+  <text x="24" y="130" class="sans" font-size="15" fill="#cbd5e1">Qwen3-0.6B 训练、重载与固定评测闭环；</text>
+  <text x="24" y="152" class="sans" font-size="15" fill="#cbd5e1">100 条虚构数据，仅为小规模合成集上的观察</text>
+  <rect x="24.0" y="168" width="74.8" height="28" rx="7" fill="#0f1b2d" stroke="#334155"/><text x="32.0" y="187" class="mono" font-size="14" fill="#cbd5e1">PyTorch</text>
+  <rect x="106.8" y="168" width="116.8" height="28" rx="7" fill="#0f1b2d" stroke="#334155"/><text x="114.8" y="187" class="mono" font-size="14" fill="#cbd5e1">Transformers</text>
+  <rect x="231.6" y="168" width="91.6" height="28" rx="7" fill="#0f1b2d" stroke="#334155"/><text x="239.6" y="187" class="mono" font-size="14" fill="#cbd5e1">PEFT/LoRA</text>
+</svg>

@@ -56,17 +56,19 @@
 **在 AgentScope、oxc 等开源项目中已合并 30+ 个 PR，主要修复 RAG、工具调用和 linter 自动修复中的边界问题。**<br>
 <sub>30+ merged pull requests across open-source projects, mostly edge-case fixes in RAG, tool calling and linter auto-fixes.</sub>
 
-- **[AgentScope](https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 3 万+ Star 的多智能体框架 · **10 个已合并**<br>
-  修复 RAG 文档解析、向量检索和工具 Schema 推断中的边界问题，以及实时 Agent 测试的稳定性。
-- **[oxc](https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 2 万+ Star 的高性能 JavaScript 工具集 · **15 个已合并**<br>
-  修复 linter 自动修复的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。
-- **[GreptimeDB](https://github.com/GreptimeTeam/greptimedb/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged)** · 6 千+ Star 的可观测性数据库 · **3 个已合并**<br>
-  修复首次启动时误报的日志目录错误，清理误提交进仓库的日志文件，并修正 CI 说明文档里的一处错误。
-- **[Autoware](https://github.com/search?q=author%3Ashuxiachai+org%3Aautowarefoundation+is%3Apr+is%3Amerged&type=pullrequests)** · 1 千+ Star 的自动驾驶开源软件 · **6 个已合并**（Universe 2 个、Core 3 个、Launch 1 个）<br>
-  修正多个模块 README 里过时的 Schema 路径，以及参数 Schema 里的无效引用和缺失参数，修复文档页的渲染错误和参数校验失败；并改进参数同步脚本，让同步出来的参数文件能找到上游 Schema。
+<div align="center">
+
+<a href="https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged"><img src="./assets/oss-agentscope.svg" width="410" alt="AgentScope：3 万+ Star 的多智能体框架，10 个已合并 PR。修复 RAG 文档解析、向量检索和工具 Schema 推断中的边界问题，以及实时 Agent 测试的稳定性。"></a>
+<a href="https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged"><img src="./assets/oss-oxc.svg" width="410" alt="oxc：2 万+ Star 的高性能 JavaScript 工具集，15 个已合并 PR。修复 linter 自动修复的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。"></a>
+<a href="https://github.com/GreptimeTeam/greptimedb/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged"><img src="./assets/oss-greptimedb.svg" width="410" alt="GreptimeDB：6 千+ Star 的可观测性数据库，3 个已合并 PR。修复首次启动时误报的日志目录错误，清理误提交进仓库的日志文件，并修正 CI 说明文档里的一处错误。"></a>
+<a href="https://github.com/search?q=author%3Ashuxiachai+org%3Aautowarefoundation+is%3Apr+is%3Amerged&type=pullrequests"><img src="./assets/oss-autoware.svg" width="410" alt="Autoware：1 千+ Star 的自动驾驶开源软件，6 个已合并 PR（Universe 2 个、Core 3 个、Launch 1 个）。修正 README 里过时的 Schema 路径、参数 Schema 里的无效引用和缺失参数，并改进参数同步脚本。"></a>
+
+</div>
 
 <details>
 <summary>AgentScope · 10 个已合并 PR 明细</summary>
+
+修复 RAG 文档解析、向量检索和工具 Schema 推断中的边界问题，以及实时 Agent 测试的稳定性。
 
 | PR | 修复内容 |
 | --- | --- |
@@ -85,6 +87,8 @@
 
 <details>
 <summary>oxc · 15 个已合并 PR 明细</summary>
+
+修复 linter 自动修复的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。
 
 | PR | 修复内容 |
 | --- | --- |
@@ -109,6 +113,8 @@
 <details>
 <summary>GreptimeDB · 3 个已合并 PR 明细</summary>
 
+修复首次启动时误报的日志目录错误，清理误提交进仓库的日志文件，并修正 CI 说明文档里的一处错误。
+
 | PR | 修复内容 |
 | --- | --- |
 | [#10446](https://github.com/GreptimeTeam/greptimedb/pull/10446) | **遥测**：首次启动时不再误报日志目录错误（绕开上游 tracing 库的已知问题） |
@@ -119,6 +125,8 @@
 
 <details>
 <summary>Autoware · 6 个已合并 PR 明细</summary>
+
+修正多个模块 README 里过时的 Schema 路径，以及参数 Schema 里的无效引用和缺失参数，修复文档页的渲染错误和参数校验失败；并改进参数同步脚本，让同步出来的参数文件能找到上游 Schema。
 
 | PR | 修复内容 |
 | --- | --- |
@@ -133,21 +141,23 @@
 
 ## `03` 其他项目 / More projects
 
-**BushfireReadyGPT · 山火准备报告助手** &nbsp; `Hybrid RAG` `Streamlit` `Ollama` `Human‑in‑the‑loop`  
-把澳洲地区与准备场景整理成有证据、可人工审核的报告草稿；混合 RAG，支持本地 Ollama。基于已注明来源的上游项目改造，不用于实时火情、撤离或生命安全决策。  
-[下载演示视频（89 秒 MP4）](https://raw.githubusercontent.com/shuxiachai/BushfireReadyGPT/25cdbab5bed51b410ede5f410a8aa70e2cdcfe72/docs/assets/bushfire-ready-gpt-demo.mp4) · [查看报告样例（v0.6.0）](https://github.com/shuxiachai/BushfireReadyGPT/blob/v0.6.0/examples/v0.6.0/cairns-council-report.md) · [查看源码](https://github.com/shuxiachai/BushfireReadyGPT)
+<div align="center">
 
-**地脉簿 LeyLineBook · 多账号任务管理工具** &nbsp; `PWA` `IndexedDB` `SQLite` `Offline-first`  
-在电脑和手机上管理多个《原神》账号的日常与周期任务；Windows 桌面版加离线 PWA，两端通过备份迁移数据，不连接或操作游戏本体。  
-[打开网页版（PWA）](https://shuxiachai.github.io/LeyLineBook/) · [下载 Windows 版](https://github.com/shuxiachai/LeyLineBook/releases/latest) · [查看源码与使用说明](https://github.com/shuxiachai/LeyLineBook)
+<a href="https://github.com/shuxiachai/BushfireReadyGPT"><img src="./assets/proj-bushfire.svg" width="410" alt="BushfireReadyGPT 山火准备报告助手：把澳洲地区与准备场景整理成有证据、可人工审核的报告草稿；混合 RAG，支持本地 Ollama。v0.6.0 历史检索基准 MRR 0.922。"></a>
+<a href="https://github.com/shuxiachai/LeyLineBook"><img src="./assets/proj-leylinebook.svg" width="410" alt="地脉簿 LeyLineBook 多账号任务管理工具：在电脑和手机上管理多个《原神》账号的日常与周期任务；Windows 桌面版加离线 PWA，两端通过备份迁移数据。"></a>
+<a href="https://github.com/shuxiachai/nsw-ev-charging-data-pipeline"><img src="./assets/proj-nsw-ev.svg" width="410" alt="NSW EV 充电数据管道：用 Python/DuckDB 整合多源充电设施数据，保留清洗与匹配证据，可离线复现；源于悉尼大学 COMP5339 团队课程项目。"></a>
+<a href="https://github.com/shuxiachai/qwen3-lora-extraction/blob/main/results/README.md"><img src="./assets/proj-qwen3-lora.svg" width="410" alt="Qwen3 LoRA 信息抽取复现：Qwen3-0.6B 中文投诉信息抽取的训练、重载与固定评测闭环；100 条虚构数据，测试集四字段全对从 6/20 提升到 19/20，仅为小规模合成数据上的观察。"></a>
 
-**NSW EV 充电数据管道** &nbsp; `DuckDB` `GeoPandas` `Data pipeline`  
-用 Python/DuckDB 整合多源充电设施数据，保留清洗与匹配证据，可离线复现。源于悉尼大学 COMP5339 团队课程项目，我负责整合协调。  
-[查看源码](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline) · [查看小型合成示例](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/blob/main/examples/README.md)
+</div>
 
-**Qwen3 LoRA 信息抽取复现** &nbsp; `PyTorch` `Transformers` `PEFT / LoRA`  
-Qwen3-0.6B 中文投诉信息抽取的训练、重载与固定评测闭环。使用 100 条虚构数据（训练/验证/测试 60/20/20），测试集上四字段全对从 6/20 提升到 19/20；仅为小规模合成数据上的观察。  
-[查看源码与结果](https://github.com/shuxiachai/qwen3-lora-extraction/blob/main/results/README.md)
+- **BushfireReadyGPT**：[演示视频（89 秒 MP4）](https://raw.githubusercontent.com/shuxiachai/BushfireReadyGPT/25cdbab5bed51b410ede5f410a8aa70e2cdcfe72/docs/assets/bushfire-ready-gpt-demo.mp4) · [报告样例（v0.6.0）](https://github.com/shuxiachai/BushfireReadyGPT/blob/v0.6.0/examples/v0.6.0/cairns-council-report.md) · [源码](https://github.com/shuxiachai/BushfireReadyGPT)<br>
+  <sub>基于已注明来源的上游项目改造，不用于实时火情、撤离或生命安全决策。</sub>
+- **地脉簿 LeyLineBook**：[网页版（PWA）](https://shuxiachai.github.io/LeyLineBook/) · [Windows 版](https://github.com/shuxiachai/LeyLineBook/releases/latest) · [源码与使用说明](https://github.com/shuxiachai/LeyLineBook)<br>
+  <sub>两端通过备份迁移数据，不连接或操作游戏本体。</sub>
+- **NSW EV 充电数据管道**：[源码](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline) · [小型合成示例](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/blob/main/examples/README.md)<br>
+  <sub>源于悉尼大学 COMP5339 团队课程项目，我负责整合协调。</sub>
+- **Qwen3 LoRA 信息抽取复现**：[源码与结果](https://github.com/shuxiachai/qwen3-lora-extraction/blob/main/results/README.md)<br>
+  <sub>使用 100 条虚构数据（训练/验证/测试 60/20/20），仅为小规模合成数据上的观察。</sub>
 
 <details>
 <summary><strong>工程实现与评测 / Engineering details</strong></summary>
@@ -162,5 +172,6 @@ Qwen3-0.6B 中文投诉信息抽取的训练、重载与固定评测闭环。使
 
 关注这里的 Agent 可靠性、RAG 评测与开源工具实践；使用问题与改进建议欢迎提交到对应项目的 Issues。
 
-面向 **2027 届 AI Agent、LLM 应用、Agent 平台与 AI 后端工程岗位**，意向城市：**深圳**。  
-<sub>Open to 2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform and AI Backend engineering. Preferred location: Shenzhen.</sub>
+面向 **2027 届 AI Agent、LLM 应用、Agent 平台与 AI 后端工程岗位**，意向城市：**深圳**。
+
+<img src="./assets/footer.svg" width="100%" alt="status.yml：Open to 2027 new-grad opportunities in AI Agent, LLM Application, Agent Platform and AI Backend engineering. Preferred location: Shenzhen. Issues and ideas welcome on each project.">
