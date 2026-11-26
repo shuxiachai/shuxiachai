@@ -61,7 +61,7 @@
 <a href="https://github.com/agentscope-ai/agentscope/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged"><img src="./assets/oss-agentscope.svg" width="410" alt="AgentScope：3 万+ Star 的多智能体框架，10 个已合并 PR。修复 RAG 文档解析、向量检索和工具 Schema 推断中的边界问题，以及实时 Agent 测试的稳定性。"></a>
 <a href="https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged"><img src="./assets/oss-oxc.svg" width="410" alt="oxc：2 万+ Star 的高性能 JavaScript 工具集，15 个已合并 PR。修复 linter 自动修复的边界问题：保留注释、换行、括号分组和语句边界，不再做会改变代码行为的修复。"></a>
 <a href="https://github.com/GreptimeTeam/greptimedb/pulls?q=is%3Apr+author%3Ashuxiachai+is%3Amerged"><img src="./assets/oss-greptimedb.svg" width="410" alt="GreptimeDB：6 千+ Star 的可观测性数据库，3 个已合并 PR。修复首次启动时误报的日志目录错误，清理误提交进仓库的日志文件，并修正 CI 说明文档里的一处错误。"></a>
-<a href="https://github.com/search?q=author%3Ashuxiachai+org%3Aautowarefoundation+is%3Apr+is%3Amerged&type=pullrequests"><img src="./assets/oss-autoware.svg" width="410" alt="Autoware：1 千+ Star 的自动驾驶开源软件，6 个已合并 PR（Universe 2 个、Core 3 个、Launch 1 个）。修正 README 里过时的 Schema 路径、参数 Schema 里的无效引用和缺失参数，并改进参数同步脚本。"></a>
+<a href="https://github.com/search?q=author%3Ashuxiachai+org%3Aautowarefoundation+is%3Apr+is%3Amerged&type=pullrequests"><img src="./assets/oss-autoware.svg" width="410" alt="Autoware：1 千+ Star 的自动驾驶开源软件，7 个已合并 PR（Universe 2 个、Core 4 个、Launch 1 个）。修正 README 里过时的 Schema 路径、参数 Schema 里的无效引用和缺失参数，给参数文件关联 Schema，并改进参数同步脚本。"></a>
 
 </div>
 
@@ -124,9 +124,9 @@
 </details>
 
 <details>
-<summary>Autoware · 6 个已合并 PR 明细</summary>
+<summary>Autoware · 7 个已合并 PR 明细</summary>
 
-修正多个模块 README 里过时的 Schema 路径，以及参数 Schema 里的无效引用和缺失参数，修复文档页的渲染错误和参数校验失败；并改进参数同步脚本，让同步出来的参数文件能找到上游 Schema。
+修正多个模块 README 里过时的 Schema 路径，以及参数 Schema 里的无效引用和缺失参数，修复文档页的渲染错误和参数校验失败；给参数文件加上指向 Schema 的注释行，并改进参数同步脚本，让同步出来的参数文件能找到上游 Schema。
 
 | PR | 修复内容 |
 | --- | --- |
@@ -135,6 +135,7 @@
 | [#1541](https://github.com/autowarefoundation/autoware_core/pull/1541) | **Core · 参数 Schema**：参数 Schema 引用了不存在的定义，参数文件无法通过校验；修正引用和 README 里的旧路径，并重命名 Schema 文件，让 CI 的 Schema 检查能覆盖到它 |
 | [#1542](https://github.com/autowarefoundation/autoware_core/pull/1542) | **Core · 文档**：模块迁移目录后 README 仍引用旧的 Schema 路径，文档页渲染出错；修正后恢复显示参数表 |
 | [#1543](https://github.com/autowarefoundation/autoware_core/pull/1543) | **Core · 参数 Schema**：删掉 `ndt_scan_matcher` 参数 Schema 里指向不存在文件和定义的悬空引用 |
+| [#1544](https://github.com/autowarefoundation/autoware_core/pull/1544) | **Core · 参数文件**：给 `twist2accel` 的参数文件加一行 `yaml-language-server` 注释，关联到它的 Schema，编辑器打开时会按 Schema 校验参数类型；这是按 issue 里的约定先做的样例 PR |
 | [#2021](https://github.com/autowarefoundation/autoware_launch/pull/2021) | **Launch · CI 脚本**：参数同步脚本把复制过来的相对 Schema 路径改写成上游 Schema 的固定链接，编辑器不再报找不到 Schema；补了单元和集成测试 |
 
 </details>
